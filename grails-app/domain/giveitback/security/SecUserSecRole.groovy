@@ -1,4 +1,4 @@
-package giveitback
+package giveitback.security
 
 import org.apache.commons.lang.builder.HashCodeBuilder
 

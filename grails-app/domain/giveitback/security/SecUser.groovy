@@ -1,4 +1,4 @@
-package giveitback
+package giveitback.security
 
 class SecUser {
 
