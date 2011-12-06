@@ -1,5 +1,7 @@
 import org.codehaus.groovy.grails.plugins.springsecurity.SpringSecurityUtils
 
+import giveitback.security.*
+
 class LogoutController {
 
 	/**

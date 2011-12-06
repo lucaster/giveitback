@@ -12,6 +12,8 @@ import org.springframework.security.core.context.SecurityContextHolder as SCH
 import org.springframework.security.web.WebAttributes
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter
 
+import giveitback.security.*
+
 class LoginController {
 
 	/**
