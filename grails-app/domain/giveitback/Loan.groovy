@@ -6,21 +6,25 @@ import giveitback.Person
 import giveitback.Item
 
 /*
- * A User lends to / borrows from a Person an Item
+ * A Person lends to / borrows from another Person an Item
  */
 class Loan {
 
-	User user
-	Person person
+	Person lender
+	Person borrower
 	Item item
+	
 	String description
-	LoanDirections lendOrBorrow
-	Date dueDate
+	Date dueDate // the date before which the item must be given back
 	boolean hasBeenGivenBack
+	
 	Date dateCreated // GORM will update this automatically
 	Date lastUpdated // GORM will update this automatically
 
-	static constraints = { dueDate(nullable:true) }
+	static constraints = { 
+		dueDate(nullable:true)
+		description(nullable:true) 
+	}
 }
 
 enum LoanDirections {LEND_TO, BORROW_FROM}
